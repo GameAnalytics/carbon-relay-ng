@@ -37,7 +37,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.5
     steps:
-      - run: sudo apt-get install rpm
+      - run: sudo apt-get update && sudo apt-get install rpm
       - checkout
       - attach_workspace:
           at: .
